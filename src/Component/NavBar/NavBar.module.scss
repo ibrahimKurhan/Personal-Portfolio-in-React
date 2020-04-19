@@ -1,0 +1,80 @@
+$navbar-height: 10%;
+
+.Nav {
+  height: $navbar-height;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  z-index: 10;
+  transition: 0.4s;
+  border-bottom: 2px solid black;
+
+  @media only screen and (max-width: 570px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+    ul {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+    // .brand {
+    //   display: none;
+    // }
+  }
+
+  &.floating {
+    background-color: white;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .container {
+    max-width: 1440px;
+    padding: 10px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100%;
+
+    li {
+      display: inline;
+    }
+
+    a {
+      transition: 0.2s;
+      margin: 0 35px;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+
+      @media only screen and (max-width: 1080px) {
+        margin: 0 0 0 35px;
+      }
+
+      &.brand {
+        font-family: "Barlow";
+        font-size: 28px;
+
+        @media only screen and (max-width: 1080px) {
+          font-size: 22px;
+          margin: 0;
+        }
+      }
+
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}
+
+.overlay {
+  height: $navbar-height;
+  width: 100%;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}

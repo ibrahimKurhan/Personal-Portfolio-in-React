@@ -1,0 +1,29 @@
+.information {
+  margin-top: 40px;
+  text-align: center;
+  h2 {
+    text-align: center;
+  }
+
+  hr {
+    margin: 10px 200px;
+    border-top: 1px solid #27303660;
+    height: 1px;
+  }
+
+  .social {
+    div {
+      margin: 10px;
+      display: inline-block;
+      // text-align: center;
+
+      p {
+        font-size: 12px;
+      }
+
+      img {
+        max-width: 40px;
+      }
+    }
+  }
+}
