@@ -1,47 +1,23 @@
 import React, { Component } from "react";
 import styles from "./NavBar.module.scss";
+import ibrahim from "../../Image/ibrahim.jpg";
 
-class Navbar extends Component {
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-
-  handleScroll() {
-    if (window.scrollY >= 20) {
-      document.querySelector("nav").classList.add(styles.floating);
-    } else {
-      document.querySelector("nav").classList.remove(styles.floating);
-    }
-  }
-
+export default class Navbar extends Component {
   render() {
     return (
-      <div>
-        <nav className={styles.Nav}>
-          <div className={styles.container}>
-            <a href="#top" className={styles.brand}>
-              Ibrahim Kurhan
-            </a>
-            <ul className={styles.links}>
-              <li>
-                <a href="#Home">Home</a>
-              </li>
-              <li>
-                <a href="#Skills">Skills</a>
-              </li>
-              <li>
-                <a href="#Project">Project</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div className={styles.overlay} />
+      <div className={styles.container}>
+        <section className={styles.photographer}>
+          <h1>About</h1>
+        </section>
+
+        <section className={styles.designer}>
+          <h1>Skills</h1>
+        </section>
+
+        <section className={styles.developer}>
+          <h1>Project</h1>
+        </section>
       </div>
     );
   }
 }
-
-export default Navbar;
