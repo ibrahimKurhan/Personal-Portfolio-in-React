@@ -1,42 +1,36 @@
 .information {
-  margin-top: 100px;
   text-align: center;
   height: auto;
-  min-height: 300px;
+  min-height: 380px;
+  background-color: blueviolet;
   .get {
     text-align: center;
     font-size: 40px;
+    padding-top: 100px;
   }
+
   .HR {
     display: flex;
     justify-content: center;
   }
+
   hr {
     margin: 10px;
     border-top: 1px solid #27303660;
     width: 300px;
   }
 
-  .social {
-    div {
-      margin: 10px;
-      display: inline-block;
-      // text-align: center;
-
-      p {
-        font-size: 12px;
-      }
-
-      img {
-        height: 70px;
-        width: 70px;
-      }
-    }
-  }
-  a {
-    font-size: 30px;
-  }
   .link {
     font-size: 30px;
+    margin: 20px;
+    display: inline-block;
+    a {
+      font-size: 30px;
+    }
+
+    img {
+      height: 70px;
+      width: 70px;
+    }
   }
 }
