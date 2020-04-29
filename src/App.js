@@ -6,6 +6,7 @@ import Contact from "./Component/Home/Contact/Contact";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Routes from "./Routes/Routes";
 import Skills from "./Component/Skills/Skills";
+import DesiredSkills from "./Component/DesiredSkills/DesiredSkills";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Home />
       <Contact />
       <Skills />
-
+      {/* <DesiredSkills /> */}
       {/* <Routes /> */}
     </div>
   );
