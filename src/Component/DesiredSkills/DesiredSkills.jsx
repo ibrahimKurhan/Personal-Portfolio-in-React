@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import styles from "../DesiredSkills/DesiredSkills.module.scss";
 import ingta from "../../Image/instagram.png";
+import angular from "../../Image/angular.png";
+import node from "../../Image/node.png";
+import python from "../../Image/python.png";
+import UX from "../../Image/UX.png";
 
 export default class DesiredSkills extends Component {
   render() {
@@ -14,7 +18,7 @@ export default class DesiredSkills extends Component {
                 <li>
                   <img
                     className={styles.image}
-                    src={ingta}
+                    src={node}
                     alt="Link to GitHub"
                   />
                   Node.js
@@ -22,10 +26,10 @@ export default class DesiredSkills extends Component {
                 <li>
                   <img
                     className={styles.image}
-                    src={ingta}
+                    src={python}
                     alt="Link to GitHub"
                   />
-                  Pyton
+                  Python
                 </li>
               </ul>
             </div>
@@ -34,17 +38,13 @@ export default class DesiredSkills extends Component {
                 <li>
                   <img
                     className={styles.image}
-                    src={ingta}
+                    src={angular}
                     alt="Link to GitHub"
                   />
                   Angular.js
                 </li>
                 <li>
-                  <img
-                    className={styles.image}
-                    src={ingta}
-                    alt="Link to GitHub"
-                  />
+                  <img className={styles.image} src={UX} alt="Link to GitHub" />
                   UX/UI
                 </li>
               </ul>

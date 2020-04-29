@@ -2,6 +2,15 @@ import React, { Component } from "react";
 import styles from "./Skills.module.scss";
 import ingta from "../../Image/instagram.png";
 import DesiredSkills from "../DesiredSkills/DesiredSkills";
+import react from "../../Image/react.png";
+import jquery from "../../Image/jquery.png";
+import html from "../../Image/html.png";
+import css from "../../Image/css.png";
+import sass from "../../Image/sass.png";
+import js from "../../Image/js.png";
+import firebase from "../../Image/firebase.png";
+import github from "../../Image/githubb.png";
+import bash from "../../Image/bash.png";
 
 export default class Skills extends Component {
   render() {
@@ -17,15 +26,15 @@ export default class Skills extends Component {
               <div>
                 <ul>
                   <li>
-                    <img src={ingta} />
+                    <img src={js} />
                     Javascript
                   </li>
                   <li>
-                    <img src={ingta} />
+                    <img src={react} />
                     React.js
                   </li>
                   <li>
-                    <img src={ingta} />
+                    <img src={jquery} />
                     Jquery
                   </li>
                 </ul>
@@ -33,15 +42,15 @@ export default class Skills extends Component {
               <div>
                 <ul>
                   <li>
-                    <img src={ingta} />
+                    <img src={html} />
                     HTML
                   </li>
                   <li>
-                    <img src={ingta} />
+                    <img src={css} />
                     CSS3
                   </li>
                   <li>
-                    <img src={ingta} />
+                    <img src={sass} />
                     SASS
                   </li>
                 </ul>
@@ -49,15 +58,15 @@ export default class Skills extends Component {
               <div>
                 <ul>
                   <li>
-                    <img src={ingta} />
+                    <img src={firebase} />
                     Firebase
                   </li>
                   <li>
-                    <img src={ingta} />
+                    <img src={github} />
                     Git/Github
                   </li>
                   <li>
-                    <img src={ingta} />
+                    <img src={bash} />
                     Bash
                   </li>
                 </ul>

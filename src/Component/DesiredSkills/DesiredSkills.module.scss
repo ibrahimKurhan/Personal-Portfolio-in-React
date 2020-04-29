@@ -36,15 +36,24 @@
     li {
       display: flex;
       flex-direction: row;
-      //   justify-content: space-between;
+      align-items: center;
       font-size: 25px;
       list-style-type: none;
       padding: 20px 5px;
       margin-top: 20px;
 
       .image {
-        height: 50px;
-        width: 44px;
+        height: 75px;
+        width: 75px;
+      }
+    }
+    @media screen and (max-width: 501px) {
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -10px;
       }
     }
   }
