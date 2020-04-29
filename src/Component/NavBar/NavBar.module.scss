@@ -1,107 +1,64 @@
-* {
-  padding: 0;
-  margin: 0;
-}
+@import "../../variable";
 
-body {
-  font-family: "Montserrat", sans-serif;
-}
+$navbar-height: 75px;
 
-.container {
-  height: 100vh;
-  display: flex;
-}
-
-section {
-  height: 100%;
+.Nav {
+  height: $navbar-height;
+  width: 100%;
+  padding: 10px 75px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex: 1;
-  transition: all 0.5s;
-}
+  justify-content: space-between;
+  position: fixed;
+  overflow: hidden;
+  z-index: 10;
+  transition: 0.4s;
+  background-color: red;
 
-section:hover {
-  flex: 2;
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  @media only screen and (max-width: 768px) {
+    display: none;
   }
-  section {
-    height: 33%;
+
+  &.floating {
+    background-color: white;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  li {
+    display: inline;
+  }
+
+  a {
+    transition: 0.2s;
+    margin: 0 35px;
+    font-size: 18px;
+    color: black;
+
+    @media only screen and (max-width: 1080px) {
+      margin: 0 0 0 35px;
+    }
+
+    &.brand {
+      font-family: "Barlow";
+      font-size: 28px;
+
+      @media only screen and (max-width: 1080px) {
+        font-size: 22px;
+        margin: 0;
+      }
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
   }
 }
 
-section h1 {
-  // background: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 12px 32px;
-}
+.overlay {
+  height: $navbar-height;
+  width: 100%;
 
-.photographer {
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  // background: #ff0909;
-  background-image: url("../../Image/kyle-sung-oQuP_XBjOMY-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: multiply;
-}
-
-.designer {
-  background: #200122; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #6f0000,
-    #200122
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #6f0000,
-    #200122
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  // background: #d2ff09;
-  background-image: url("../../Image/photo-1544256718-3bcf237f3974.jpeg");
-
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: multiply;
-}
-
-.developer {
-  // background: #09ff78;
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-image: url("../../Image/markus-spiske-qjnAnF0jIGk-unsplash\ \(2\).jpg");
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: multiply;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 }

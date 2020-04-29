@@ -1,14 +1,20 @@
 .information {
-  margin-top: 40px;
+  margin-top: 100px;
   text-align: center;
-  h2 {
+  height: auto;
+  min-height: 300px;
+  .get {
     text-align: center;
+    font-size: 40px;
   }
-
+  .HR {
+    display: flex;
+    justify-content: center;
+  }
   hr {
-    margin: 10px 200px;
+    margin: 10px;
     border-top: 1px solid #27303660;
-    height: 1px;
+    width: 300px;
   }
 
   .social {
@@ -22,8 +28,15 @@
       }
 
       img {
-        max-width: 40px;
+        height: 70px;
+        width: 70px;
       }
     }
+  }
+  a {
+    font-size: 30px;
+  }
+  .link {
+    font-size: 30px;
   }
 }
