@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styles from "../DesiredSkills/DesiredSkills.module.scss";
-import ingta from "../../Image/instagram.png";
 import angular from "../../Image/angular.png";
 import node from "../../Image/node.png";
 import python from "../../Image/python.png";

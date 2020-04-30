@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styles from "./Skills.module.scss";
-import ingta from "../../Image/instagram.png";
 import DesiredSkills from "../DesiredSkills/DesiredSkills";
 import react from "../../Image/react.png";
 import jquery from "../../Image/jquery.png";

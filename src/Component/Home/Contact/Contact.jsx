@@ -4,6 +4,7 @@ import github from "../../../Image/github.png";
 import linkedin from "../../../Image/linkedin.png";
 import cv from "../../../Image/cv.png";
 import ibkCV from "../../../Static/ibkCV.pdf";
+import linkedinn from "../../../Image/linkedinn.png";
 
 export default class Contac extends Component {
   render() {
@@ -31,7 +32,11 @@ export default class Contac extends Component {
               href="https://www.linkedin.com/in/ibrahim-kurhan-6971a827/"
               target="_blank"
             >
-              <img src={linkedin} alt="Link to LinkedIn" />
+              <img
+                className={styles.image}
+                src={linkedinn}
+                alt="Link to LinkedIn"
+              />
             </a>
           </div>
         </div>

@@ -4,7 +4,6 @@
   min-height: 400px;
   border: 2px solid black;
   display: flex;
-  // flex-direction: column;
 }
 .main {
   display: flex;
@@ -69,9 +68,6 @@
       }
     }
     @media screen and (max-width: 570px) {
-      // .skills {
-      //   height: 928px;
-      // }
       li {
         display: flex;
         justify-content: center;
@@ -85,11 +81,5 @@
         width: 40px;
       }
     }
-    // @media screen and (max-width: 555px) {
-    //   img {
-    //     height: 40px;
-    //     width: 40px;
-    //   }
-    // }
   }
 }
