@@ -84,6 +84,7 @@
   min-height: 400px;
   display: flex;
 }
+
 .projectWrapper {
   display: flex;
   flex-direction: column;
@@ -92,6 +93,7 @@
   min-height: 400px;
   text-align: center;
 }
+
 .allProjects {
   display: grid;
   justify-content: center;
@@ -104,6 +106,7 @@
 .headerWrapper {
   float: right;
 }
+
 .header {
   font-size: 40px;
   min-height: 868px;
@@ -111,12 +114,14 @@
   text-orientation: upright;
   float: right;
 }
+
 @media screen and (max-width: 985px) {
   .allProjects {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media screen and (max-width: 680px) {
   .allProjects {
     display: grid;

@@ -6,25 +6,30 @@
   width: 100%;
   border-bottom: 1px solid black;
   text-align: center;
-}
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  .T {
-    margin-top: 30px;
-    font-size: 40px;
-    color: black;
-  }
-  .h {
-    font-size: 40px;
-    color: black;
-    text-align: center;
+  background-color: #fffcf7;
+
+  .header {
+    display: flex;
     align-items: center;
-  }
-  p {
-    font-size: 20px;
-    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .head {
+      margin-top: 30px;
+      font-size: 40px;
+      color: black;
+    }
+
+    .junior {
+      font-size: 40px;
+      color: black;
+      text-align: center;
+      align-items: center;
+    }
+
+    p {
+      font-size: 20px;
+      text-align: center;
+    }
   }
 }

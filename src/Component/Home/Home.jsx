@@ -12,8 +12,8 @@ export default class Home extends Component {
       <>
         <div className={styles.top}>
           <div className={styles.header}>
-            <div className={styles.T}>Hello I'm Ibrahim Kurhan</div>
-            <div className={styles.h}>
+            <div className={styles.head}>Hello I'm Ibrahim Kurhan</div>
+            <div className={styles.junior}>
               Junior Software Developer based in London
             </div>
             <div className={styles.textbox}>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styles from "./Skills.module.scss";
-import DesiredSkills from "../DesiredSkills/DesiredSkills";
+import DesiredSkills from "./DesiredSkills/DesiredSkills";
 import react from "../../Image/react.png";
 import jquery from "../../Image/jquery.png";
 import html from "../../Image/html.png";

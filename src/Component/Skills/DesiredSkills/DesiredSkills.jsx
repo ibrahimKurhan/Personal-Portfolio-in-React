@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import styles from "../DesiredSkills/DesiredSkills.module.scss";
-import angular from "../../Image/angular.png";
-import node from "../../Image/node.png";
-import python from "../../Image/python.png";
-import UX from "../../Image/UX.png";
+import angular from "../../../Image/angular.png";
+import node from "../../../Image/node.png";
+import python from "../../../Image/python.png";
+import UX from "../../../Image/UX.png";
 
 export default class DesiredSkills extends Component {
   render() {

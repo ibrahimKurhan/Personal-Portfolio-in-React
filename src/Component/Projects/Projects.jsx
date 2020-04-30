@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Project from "../Project/Project";
+import Project from "../Projects/Project/Project";
 import style from "../Projects/Projects.module.scss";
 
 export default class Projects extends Component {
