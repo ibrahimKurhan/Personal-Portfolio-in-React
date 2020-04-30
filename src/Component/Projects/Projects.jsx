@@ -76,7 +76,9 @@ export default class Projects extends Component {
     });
     return (
       <div className={style.row}>
-        <div className={style.allProjects}>{projectsCards}</div>
+        <div className={style.projectWrapper}>
+          <div className={style.allProjects}>{projectsCards}</div>
+        </div>
         <div className={style.headerWrapper}>
           <div className={style.header}>Project</div>
         </div>
