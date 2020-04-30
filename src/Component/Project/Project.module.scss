@@ -7,9 +7,22 @@
 .card {
   width: 300px;
   height: 350px;
-  border: 2px solid black;
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 20px;
+}
+.block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.subtitle,
+.title,
+.des,
+.link {
+  font-size: 10px;
 }

@@ -12,7 +12,7 @@ export default class Project extends Component {
               <div className={style.subtitle}>{image}</div>
               <div className={style.title}>{name}</div>
               <div className={style.des}>{description}</div>
-              <div className={style.des}>{links}</div>
+              <div className={style.link}>{links}</div>
             </div>
           </div>
         </div>
