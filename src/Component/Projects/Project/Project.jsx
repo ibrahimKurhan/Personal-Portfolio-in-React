@@ -7,13 +7,13 @@ export default class Project extends Component {
     return (
       <div className={style.cardBox}>
         <div className={style.card}>
-          <div className={style.blockwrapper}>
-            <div className={style.block}>
-              <div className={style.subtitle}>{image}</div>
-              <div className={style.title}>{name}</div>
-              <div className={style.des}>{description}</div>
-              <div className={style.link}>{links}</div>
-            </div>
+          <div className={style.front}>
+            <div className={style.subtitle}>{image}</div>
+          </div>
+          <div className={style.back}>
+            <div className={style.title}>{name}</div>
+            <div className={style.des}>{description}</div>
+            <div className={style.link}>{links}</div>
           </div>
         </div>
       </div>

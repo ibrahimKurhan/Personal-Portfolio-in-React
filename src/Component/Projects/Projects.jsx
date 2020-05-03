@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Project from "../Projects/Project/Project";
 import style from "../Projects/Projects.module.scss";
+import IBK from "../../Image/IBK.png";
 
 export default class Projects extends Component {
   state = {
@@ -8,7 +9,7 @@ export default class Projects extends Component {
       {
         id: 1,
         name: "The Drop Clinet Project",
-        image: "images/Screenshot 2020-04-03 at 22.17.01.png",
+        image: IBK,
         description: "A web-app build with React and Firebase",
         links: [
           "https://the-drop-x-nology.web.app/",
@@ -26,6 +27,7 @@ export default class Projects extends Component {
         id: 3,
         name: "Weather App",
         image: "weather-app",
+
         description:
           "This project includes 3 APPs: Weather API,One Question Quiz,Football Team Organiser ",
         links: [
@@ -68,11 +70,7 @@ export default class Projects extends Component {
 
   render() {
     let projectsCards = this.state.projects.map((pro) => {
-      return (
-        <div className={style.projectBox}>
-          <Project className={style.data} key={pro.id} pro={pro} />
-        </div>
-      );
+      return <Project className={style.data} key={pro.id} pro={pro} />;
     });
     return (
       <div className={style.row}>
