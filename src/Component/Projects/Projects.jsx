@@ -15,7 +15,8 @@ export default class Projects extends Component {
         id: 1,
         name: "The Drop Clinet Project",
         image: drop,
-        description: "A web-app build with React and Firebase",
+        description:
+          "Client project created as part of an agile team, pair-programming.Built using React, Firebase, Auth & the Spotify API. For Client use in investment pitches.",
         links: [
           "https://the-drop-x-nology.web.app/",
           "https://the-drop-x-nology.web.app/",
