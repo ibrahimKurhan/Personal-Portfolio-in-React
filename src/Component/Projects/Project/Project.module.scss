@@ -27,11 +27,16 @@
 }
 .front {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  // width: 100%;
+  // height: 100%;
   backface-visibility: hidden;
-  background-color: #ffc728;
+  // background-color: #ffc728;
   color: #333;
+  border-radius: 20px;
+}
+img {
+  height: 450px;
+  width: 100%;
   border-radius: 20px;
 }
 .back {
@@ -39,7 +44,7 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background-color: red;
+  // background-color: red;
   color: #333;
   transform: rotateY(180deg);
   border-radius: 20px;

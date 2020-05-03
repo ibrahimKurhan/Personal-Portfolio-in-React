@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import Project from "../Projects/Project/Project";
 import style from "../Projects/Projects.module.scss";
-import IBK from "../../Image/IBK.png";
+import drop from "../../Image/drop.png";
+import imdb from "../../Image/imdb.png";
+import weather from "../../Image/weather-app.png";
+import memory from "../../Image/memory.png";
+import morse from "../../Image/morse.png";
+import wasp from "../../Image/wasp.png";
 
 export default class Projects extends Component {
   state = {
@@ -9,7 +14,7 @@ export default class Projects extends Component {
       {
         id: 1,
         name: "The Drop Clinet Project",
-        image: IBK,
+        image: drop,
         description: "A web-app build with React and Firebase",
         links: [
           "https://the-drop-x-nology.web.app/",
@@ -19,14 +24,14 @@ export default class Projects extends Component {
       {
         id: 2,
         name: "The Movie DB",
-        image: "Defender",
+        image: imdb,
         description: "secon",
         links: ["Germany", "England"],
       },
       {
         id: 3,
         name: "Weather App",
-        image: "weather-app",
+        image: weather,
 
         description:
           "This project includes 3 APPs: Weather API,One Question Quiz,Football Team Organiser ",
@@ -38,7 +43,7 @@ export default class Projects extends Component {
       {
         id: 4,
         name: "Memory Game",
-        image: "images/Screenshot 2020-04-03 at 21.52.51.png",
+        image: memory,
         description: "Built by using Javascript,CSS and HTML",
         links: [
           "https://github.com/ibkibk/game-memory/blob/gh-pages/app.js",
@@ -48,7 +53,7 @@ export default class Projects extends Component {
       {
         id: 5,
         name: "Morse Code",
-        image: "images/Screenshot 2020-04-03 at 22.26.30.png",
+        image: morse,
         description: "Built by using Javascript,CSS and HTML",
         links: [
           "https://github.com/ibkibk/morse-code/blob/gh-pages/app.js",
@@ -57,8 +62,8 @@ export default class Projects extends Component {
       },
       {
         id: 6,
-        name: "Morse Code",
-        image: "images/Screenshot 2020-04-03 at 22.26.30.png",
+        name: "WASP GAME",
+        image: wasp,
         description: "Built by using Javascript,CSS and HTML",
         links: [
           "https://github.com/ibkibk/morse-code/blob/gh-pages/app.js",

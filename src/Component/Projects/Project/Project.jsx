@@ -8,7 +8,9 @@ export default class Project extends Component {
       <div className={style.cardBox}>
         <div className={style.card}>
           <div className={style.front}>
-            <div className={style.subtitle}>{image}</div>
+            <div className={style.subtitle}>
+              <img src={image} />
+            </div>
           </div>
           <div className={style.back}>
             <div className={style.title}>{name}</div>
