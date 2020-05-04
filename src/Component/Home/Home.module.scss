@@ -1,10 +1,14 @@
+@import "../../variable";
+
+html {
+  scroll-behavior: auto;
+}
 .top {
   display: flex;
   justify-content: center;
   height: auto;
   min-height: 400px;
   width: 100%;
-  border-bottom: 1px solid black;
   text-align: center;
   background-color: #fffcf7;
 
@@ -16,7 +20,7 @@
 
     .head {
       margin-top: 30px;
-      font-size: 40px;
+      font-size: $font-size;
       color: black;
     }
 

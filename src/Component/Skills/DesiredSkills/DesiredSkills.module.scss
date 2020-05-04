@@ -1,3 +1,5 @@
+@import "../../../variable";
+
 .topContainer {
   height: auto;
   width: 100%;
@@ -13,12 +15,13 @@
   width: 100%;
 
   .wannaHave {
-    font-size: 40px;
+    font-size: $font-size;
     margin-right: 60px;
+    margin-top: 50px;
   }
 
   .list {
-    height: 400px;
+    // height: 400px;
     display: flex;
     justify-content: center;
     justify-content: space-evenly;

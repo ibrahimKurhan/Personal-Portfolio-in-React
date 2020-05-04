@@ -14,67 +14,70 @@ import bash from "../../Image/bash.png";
 export default class Skills extends Component {
   render() {
     return (
-      <div className={styles.container}>
-        <div className={styles.sklillsWrapper}>
-          <div className={styles.skills}>SKILLS</div>
-        </div>
-        <div className={styles.main}>
-          <div className={styles.topped}>
-            <div className={styles.eachSkills}>What I have</div>
-            <div className={styles.hope}>
-              <div>
-                <ul>
-                  <li>
-                    <img src={js} />
-                    Javascript
-                  </li>
-                  <li>
-                    <img src={react} />
-                    React.js
-                  </li>
-                  <li>
-                    <img src={jquery} />
-                    Jquery
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul>
-                  <li>
-                    <img src={html} />
-                    HTML
-                  </li>
-                  <li>
-                    <img src={css} />
-                    CSS3
-                  </li>
-                  <li>
-                    <img src={sass} />
-                    SASS
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul>
-                  <li>
-                    <img src={firebase} />
-                    Firebase
-                  </li>
-                  <li>
-                    <img src={github} />
-                    Git/Github
-                  </li>
-                  <li>
-                    <img src={bash} />
-                    Bash
-                  </li>
-                </ul>
+      <>
+        <a name="skills" />
+        <div className={styles.container} id={styles.skills}>
+          <div className={styles.sklillsWrapper}>
+            <div className={styles.skills}>SKILLS</div>
+          </div>
+          <div className={styles.main}>
+            <div className={styles.topped}>
+              <div className={styles.eachSkills}>What I have</div>
+              <div className={styles.hope}>
+                <div>
+                  <ul>
+                    <li>
+                      <img src={js} />
+                      Javascript
+                    </li>
+                    <li>
+                      <img src={react} />
+                      React.js
+                    </li>
+                    <li>
+                      <img src={jquery} />
+                      Jquery
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>
+                      <img src={html} />
+                      HTML
+                    </li>
+                    <li>
+                      <img src={css} />
+                      CSS3
+                    </li>
+                    <li>
+                      <img src={sass} />
+                      SASS
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>
+                      <img src={firebase} />
+                      Firebase
+                    </li>
+                    <li>
+                      <img src={github} />
+                      Git/Github
+                    </li>
+                    <li>
+                      <img src={bash} />
+                      Bash
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
+            <DesiredSkills />
           </div>
-          <DesiredSkills />
         </div>
-      </div>
+      </>
     );
   }
 }

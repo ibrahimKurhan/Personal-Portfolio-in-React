@@ -10,7 +10,8 @@ export default class Home extends Component {
   render() {
     return (
       <>
-        <div className={styles.top}>
+        <a name="home" />
+        <div className={styles.top} id={styles.home}>
           <div className={styles.header}>
             <div className={styles.head}>Hello I'm Ibrahim Kurhan</div>
             <div className={styles.junior}>

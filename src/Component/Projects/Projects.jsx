@@ -74,14 +74,17 @@ export default class Projects extends Component {
       return <Project className={style.data} key={pro.id} pro={pro} />;
     });
     return (
-      <div className={style.row}>
-        <div className={style.projectWrapper}>
-          <div className={style.allProjects}>{projectsCards}</div>
+      <>
+        <a name="projects" />
+        <div className={style.row} id={style.projects}>
+          <div className={style.projectWrapper}>
+            <div className={style.allProjects}>{projectsCards}</div>
+          </div>
+          <div className={style.headerWrapper}>
+            <div className={style.header}>Project</div>
+          </div>
         </div>
-        <div className={style.headerWrapper}>
-          <div className={style.header}>Project</div>
-        </div>
-      </div>
+      </>
     );
   }
 }

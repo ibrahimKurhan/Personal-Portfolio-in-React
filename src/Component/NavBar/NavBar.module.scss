@@ -20,7 +20,7 @@ $navbar-height: 75px;
   }
 
   &.floating {
-    background-color: chocolate;
+    background-color: $font-color;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
   }
 

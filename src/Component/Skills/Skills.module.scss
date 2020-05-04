@@ -1,9 +1,11 @@
+@import "../../variable";
+
 .container {
   height: auto;
   width: 100%;
   min-height: 400px;
-  border-bottom: 1px solid black;
   display: flex;
+  background-color: $background-color;
 
   .skillsWrapper {
     height: 100%;
@@ -11,11 +13,11 @@
   }
 
   .skills {
-    font-size: 40px;
+    font-size: $font-size;
     min-height: 868px;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    background-color: chocolate;
+    background-color: $font-color;
   }
 
   .main {
@@ -34,7 +36,7 @@
   width: 100%;
 
   .eachSkills {
-    font-size: 40px;
+    font-size: $font-size;
     margin-right: 60px;
   }
 
@@ -80,6 +82,10 @@
       img {
         height: 40px;
         width: 40px;
+      }
+
+      .skillsWrapper {
+        display: none;
       }
     }
   }

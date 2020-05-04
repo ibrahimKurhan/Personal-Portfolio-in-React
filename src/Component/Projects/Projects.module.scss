@@ -1,9 +1,10 @@
+@import "../../variable";
+
 .row {
   height: auto;
-  // width: 100%;
-  // height: 100%;
   min-height: 400px;
   display: flex;
+  background-color: $background-color;
 }
 
 .projectWrapper {
@@ -32,15 +33,14 @@
 
 .header {
   height: 100%;
-  font-size: 40px;
-  // min-height: 868px;
+  font-size: $font-size;
   writing-mode: vertical-rl;
   text-orientation: upright;
   float: right;
-  background-color: chocolate;
+  background-color: $font-color;
 }
 
-@media screen and (max-width: 985px) {
+@media screen and (max-width: 1175px) {
   .allProjects {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -52,12 +52,18 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  .headerWrapper {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1025px) {
-  .allProjects {
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+  // .allProjects {
+  //   grid-gap: 10px;
+  // }
+
+  .headerWrapper {
+    display: none;
   }
 }
