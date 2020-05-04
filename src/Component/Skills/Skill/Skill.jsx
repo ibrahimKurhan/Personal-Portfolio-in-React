@@ -1,18 +1,20 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
+// import styles from "../Skill/Skill.module.scss";
+// export class Skill extends Component {
+//   render() {
+//     let { id, image, name } = this.props.skill;
 
-export class Skill extends Component {
-  render() {
-    let { id, image, name } = this.props.pro;
+//     return (
+//       <React.Fragment>
+//         <div className={styles.skill}>
+//           <li>
+//             <img src={image} />
+//             {name}
+//           </li>
+//         </div>
+//       </React.Fragment>
+//     );
+//   }
+// }
 
-    return (
-      <React.Fragment>
-        <li>
-          <img src={image} />
-          {name}
-        </li>
-      </React.Fragment>
-    );
-  }
-}
-
-export default Skill;
+// export default Skill;

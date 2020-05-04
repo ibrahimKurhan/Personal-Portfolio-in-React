@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default class Project extends Component {
   render() {
-    let { id, image, name, description, links } = this.props.pro;
+    let { id, image, name, description, link1, link2 } = this.props.pro;
     return (
       <div className={style.cardBox}>
         <div className={style.card}>
@@ -18,19 +18,23 @@ export default class Project extends Component {
             <div className={style.title}>{name}</div>
             <div className={style.des}>{description}</div>
             <div className={style.link}>
-              <FontAwesomeIcon
-                style={{ cursor: "pointer" }}
-                src={links}
-                icon={faCode}
-                size="4x"
-              >
-                <a href={links}>{links}</a>
-              </FontAwesomeIcon>
-              <FontAwesomeIcon
-                style={{ cursor: "pointer", marginLeft: "60px" }}
-                icon={faGlobe}
-                size="4x"
-              />
+              <a href={link1} target="_blank">
+                {" "}
+                <FontAwesomeIcon
+                  style={{ cursor: "pointer" }}
+                  src={link1}
+                  icon={faCode}
+                  size="4x"
+                />
+              </a>
+              <a href={link2} target="_blank">
+                <FontAwesomeIcon
+                  src={link2}
+                  style={{ cursor: "pointer", marginLeft: "50px" }}
+                  icon={faGlobe}
+                  size="4x"
+                />
+              </a>
             </div>
           </div>
         </div>

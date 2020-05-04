@@ -12,40 +12,6 @@ import github from "../../Image/githubb.png";
 import bash from "../../Image/bash.png";
 
 export default class Skills extends Component {
-  state = {
-    projects: [
-      {
-        id: 1,
-        name: "Javascript",
-        image: { js },
-      },
-      {
-        id: 2,
-        name: "React.js",
-        imgage: { react },
-      },
-      {
-        id: 3,
-        name: "Jquery",
-        imgage: { jquery },
-      },
-      {
-        id: 4,
-        name: "HTML",
-        image: { html },
-      },
-      {
-        id: 5,
-        name: "css",
-        image: { css },
-      },
-      {
-        id: 6,
-        name: "BASH",
-        imgage: { bash },
-      },
-    ],
-  };
   render() {
     return (
       <div className={styles.container}>
