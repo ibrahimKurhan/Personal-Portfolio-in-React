@@ -13,15 +13,20 @@ $navbar-height: 75px;
   overflow: hidden;
   z-index: 10;
   transition: 0.4s;
-  background-color: #fffcf7;
-
+  background-color: $secondary-color;
+  a {
+    color: black;
+  }
   @media only screen and (max-width: 768px) {
     display: none;
   }
 
   &.floating {
-    background-color: $font-color;
+    background-color: $background-color;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    a {
+      color: $secondary-color;
+    }
   }
 
   li {
@@ -32,7 +37,7 @@ $navbar-height: 75px;
     transition: 0.2s;
     margin: 0 35px;
     font-size: 18px;
-    color: black;
+    // color: $secondary-color;
 
     @media only screen and (max-width: 1080px) {
       margin: 0 0 0 35px;

@@ -16,6 +16,7 @@
 
   .wannaHave {
     font-size: $font-size;
+    color: $secondary-color;
     margin-top: 200px;
     margin-bottom: 50px;
   }
@@ -40,6 +41,7 @@
       list-style-type: none;
       padding: 20px 5px;
       margin-top: 20px;
+      color: $secondary-color;
 
       .image {
         height: 90px;

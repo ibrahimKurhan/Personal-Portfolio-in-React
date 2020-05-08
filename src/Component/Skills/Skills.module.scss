@@ -37,6 +37,7 @@
 
   .eachSkills {
     font-size: $font-size;
+    color: $secondary-color;
     margin-top: 150px;
     margin-bottom: 50px;
   }
@@ -58,7 +59,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-
+      color: $secondary-color;
       font-size: $font-size2;
       font-weight: bold;
       list-style-type: none;
