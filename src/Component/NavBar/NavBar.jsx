@@ -17,6 +17,7 @@ export default class NavBar extends Component {
   render() {
     return (
       <div>
+        <a name="home" />
         <nav className={styles.Nav}>
           <a href="#top" className={styles.brand}>
             Ibrahim Kurhan

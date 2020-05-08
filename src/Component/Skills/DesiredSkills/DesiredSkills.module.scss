@@ -16,12 +16,11 @@
 
   .wannaHave {
     font-size: $font-size;
-    margin-right: 60px;
-    margin-top: 50px;
+    margin-top: 200px;
+    margin-bottom: 50px;
   }
 
   .list {
-    // height: 400px;
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
@@ -37,14 +36,14 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      font-size: 25px;
+      font-size: $font-size2;
       list-style-type: none;
       padding: 20px 5px;
       margin-top: 20px;
 
       .image {
-        height: 75px;
-        width: 75px;
+        height: 90px;
+        width: 90px;
       }
     }
     @media screen and (max-width: 501px) {
@@ -54,6 +53,7 @@
         align-items: center;
         flex-direction: column;
         margin-top: -10px;
+        font-size: 15px;
       }
     }
   }

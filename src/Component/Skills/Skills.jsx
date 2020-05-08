@@ -17,12 +17,12 @@ export default class Skills extends Component {
       <>
         <a name="skills" />
         <div className={styles.container} id={styles.skills}>
-          <div className={styles.sklillsWrapper}>
+          {/* <div className={styles.sklillsWrapper}>
             <div className={styles.skills}>SKILLS</div>
-          </div>
+          </div> */}
           <div className={styles.main}>
             <div className={styles.topped}>
-              <div className={styles.eachSkills}>What I have</div>
+              <div className={styles.eachSkills}>Skills I have</div>
               <div className={styles.hope}>
                 <div>
                   <ul>

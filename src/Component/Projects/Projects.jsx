@@ -76,12 +76,12 @@ export default class Projects extends Component {
     return (
       <>
         <a name="projects" />
-        <div className={style.row} id={style.projects}>
-          <div className={style.projectWrapper}>
-            <div className={style.allProjects}>{projectsCards}</div>
-          </div>
+        <div className={style.row}>
           <div className={style.headerWrapper}>
             <div className={style.header}>Project</div>
+          </div>
+          <div className={style.projectWrapper}>
+            <div className={style.allProjects}>{projectsCards}</div>
           </div>
         </div>
       </>
