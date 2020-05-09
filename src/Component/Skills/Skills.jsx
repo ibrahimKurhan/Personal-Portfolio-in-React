@@ -35,6 +35,10 @@ export default class Skills extends Component {
                       <img src={jquery} />
                       Jquery
                     </li>
+                    <li>
+                      <img src={github} />
+                      Git/Github
+                    </li>
                   </ul>
                 </div>
                 <div>
@@ -51,27 +55,17 @@ export default class Skills extends Component {
                       <img src={sass} />
                       SASS
                     </li>
-                  </ul>
-                </div>
-                <div>
-                  <ul>
                     <li>
                       <img src={firebase} />
                       Firebase
-                    </li>
-                    <li>
-                      <img src={github} />
-                      Git/Github
-                    </li>
-                    <li>
-                      <img src={bash} />
-                      Bash
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <DesiredSkills />
+            <div className={styles.desiredSkills}>
+              <DesiredSkills />
+            </div>
           </div>
         </div>
       </>

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styles from "../Contact/Contact.module.scss";
 import github from "../../../Image/github.png";
-import linkedin from "../../../Image/linkedin.png";
 import cv from "../../../Image/cv.png";
 import ibkCV from "../../../Static/ibkCV.pdf";
 import linkedinn from "../../../Image/linkedinn.png";
