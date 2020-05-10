@@ -9,7 +9,6 @@ import sass from "../../Image/sass.png";
 import js from "../../Image/js.png";
 import firebase from "../../Image/firebase.png";
 import github from "../../Image/githubb.png";
-import bash from "../../Image/bash.png";
 
 export default class Skills extends Component {
   render() {

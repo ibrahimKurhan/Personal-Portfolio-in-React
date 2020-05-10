@@ -1,10 +1,5 @@
 import React, { Component } from "react";
-import NavBar from "../NavBar/NavBar";
 import styles from "./Home.module.scss";
-import IBK from "../../Image/IBK.png";
-import Particles from "react-particles-js";
-import Contact from "./Contact/Contact";
-import Contac from "./Contact/Contact";
 
 export default class Home extends Component {
   render() {
@@ -30,7 +25,6 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-        {/* <Contact /> */}
       </>
     );
   }
