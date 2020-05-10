@@ -19,16 +19,13 @@ export default class Projects extends Component {
           "Client project created as part of an agile team, pair-programming.Built using React, Firebase, Auth & the Spotify API. For Client use in investment pitches.",
         link1: "https://github.com/ibkibk/the-drop-x-nology",
         link2: "https://the-drop-x-nology.web.app/",
-        // link: [
-        //   "https://the-drop-x-nology.web.app/",
-        // "https://the-drop-x-nology.web.app/",
-        // ],
       },
       {
         id: 2,
         name: "The Movie DB",
         image: imdb,
-        description: "secon",
+        description:
+          "Modern fast movie database web app with React using The Movie DB API.",
         link1: "https://github.com/ibkibk/The-movie-imdb",
         link2: "https://moviedb-a9346.web.app",
       },
