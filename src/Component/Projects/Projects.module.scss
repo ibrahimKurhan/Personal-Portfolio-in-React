@@ -6,20 +6,19 @@
   display: flex;
   flex-direction: column;
   background-color: $background-color;
-}
 
-.projectWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  margin-top: 50px;
-  min-height: 400px;
-  text-align: center;
-  padding-bottom: 50px;
+  .projectWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    min-height: 400px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
 }
-
 .allProjects {
   display: grid;
   align-items: center;
