@@ -1,5 +1,8 @@
-## Personal Website built in React.js
+## Personal Website built with React.js
 ![Alt text](src/Image/website.png)
+
+## Description
+This is my personal resume website built with ReactJS
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
