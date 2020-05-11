@@ -1,4 +1,5 @@
-This Project is in process
+## Personal Website built in React.js
+![Alt text](src/Image/website.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
