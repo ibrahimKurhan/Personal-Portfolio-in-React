@@ -14,6 +14,7 @@ export default class Home extends Component {
                 loop={Infinity}
                 wrapper={"b"}
                 steps={["Ibrahim Kurhan", 1000]}
+                className={styles.typical}
               />
             </div>
             <h2 id="element"></h2>
