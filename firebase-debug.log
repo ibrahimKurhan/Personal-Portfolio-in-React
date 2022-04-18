@@ -1,0 +1,151 @@
+[debug] [2022-04-18T17:40:20.616Z] ----------------------------------------------------------------------
+[debug] [2022-04-18T17:40:20.617Z] Command:       /Users/ibrahimkurhan/.nvm/versions/node/v14.17.1/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-04-18T17:40:20.617Z] CLI Version:   8.0.3
+[debug] [2022-04-18T17:40:20.618Z] Platform:      darwin
+[debug] [2022-04-18T17:40:20.618Z] Node Version:  v14.17.1
+[debug] [2022-04-18T17:40:20.618Z] Time:          Mon Apr 18 2022 18:40:20 GMT+0100 (British Summer Time)
+[debug] [2022-04-18T17:40:20.618Z] ----------------------------------------------------------------------
+[debug] [2022-04-18T17:40:20.618Z] 
+[debug] [2022-04-18T17:40:20.624Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-18T17:40:20.624Z] > authorizing via signed-in user
+[debug] [2022-04-18T17:40:20.625Z] [iam] checking project personal-website-a3fbd for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-04-18T17:40:20.626Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-04-18T17:40:20.627Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-18T17:40:20.820Z] <<< HTTP RESPONSE 400 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 18 Apr 2022 17:40:20 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T17:40:20.821Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-website-a3fbd:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-18T17:40:21.704Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 18 Apr 2022 17:40:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=623","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T17:40:21.705Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2022-04-18T17:40:21.705Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-04-18T17:40:21.706Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-04-18T17:40:21.706Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-18T17:40:21.853Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 18 Apr 2022 17:40:21 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T17:40:21.853Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/personal-website-a3fbd  
+ 
+[debug] [2022-04-18T17:40:21.991Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 18 Apr 2022 17:40:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T17:40:21.992Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-04-18T17:40:21.992Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-04-18T17:40:22.203Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/Users/ibrahimkurhan/.config/yarn/global/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/Users/ibrahimkurhan/.config/yarn/global/node_modules/firebase-tools/lib/api.js:41:35)
+    at Request.self.callback (/Users/ibrahimkurhan/.config/yarn/global/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:375:28)
+    at Request.emit (domain.js:470:12)
+    at Request.<anonymous> (/Users/ibrahimkurhan/.config/yarn/global/node_modules/request/request.js:1154:10)
+    at Request.emit (events.js:375:28)
+    at Request.emit (domain.js:470:12)
+    at IncomingMessage.<anonymous> (/Users/ibrahimkurhan/.config/yarn/global/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:481:28)
+    at IncomingMessage.emit (events.js:387:35)
+    at IncomingMessage.emit (domain.js:470:12)
+    at endReadableNT (internal/streams/readable.js:1317:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[error] 
+[error] Error: Failed to get Firebase project personal-website-a3fbd. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-04-18T17:42:35.131Z] ----------------------------------------------------------------------
+[debug] [2022-04-18T17:42:35.132Z] Command:       /Users/ibrahimkurhan/.nvm/versions/node/v14.17.1/bin/node /usr/local/bin/firebase init
+[debug] [2022-04-18T17:42:35.133Z] CLI Version:   8.0.3
+[debug] [2022-04-18T17:42:35.133Z] Platform:      darwin
+[debug] [2022-04-18T17:42:35.133Z] Node Version:  v14.17.1
+[debug] [2022-04-18T17:42:35.134Z] Time:          Mon Apr 18 2022 18:42:35 GMT+0100 (British Summer Time)
+[debug] [2022-04-18T17:42:35.134Z] ----------------------------------------------------------------------
+[debug] [2022-04-18T17:42:35.134Z] 
+[debug] [2022-04-18T17:42:35.140Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-18T17:42:35.140Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/ibrahimkurhan/Documents/Personal-Portfolio-in-React
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using personal-website-a3fbd.
+[debug] [2022-04-18T17:42:39.322Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-04-18T17:42:39.322Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-18T17:42:39.541Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 18 Apr 2022 17:42:39 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T17:42:39.542Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/personal-website-a3fbd  
+ 
+[debug] [2022-04-18T17:42:39.685Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 18 Apr 2022 17:42:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T17:42:39.685Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-04-18T17:42:39.686Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-04-18T17:42:39.830Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/Users/ibrahimkurhan/.config/yarn/global/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/Users/ibrahimkurhan/.config/yarn/global/node_modules/firebase-tools/lib/api.js:41:35)
+    at Request.self.callback (/Users/ibrahimkurhan/.config/yarn/global/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:375:28)
+    at Request.emit (domain.js:470:12)
+    at Request.<anonymous> (/Users/ibrahimkurhan/.config/yarn/global/node_modules/request/request.js:1154:10)
+    at Request.emit (events.js:375:28)
+    at Request.emit (domain.js:470:12)
+    at IncomingMessage.<anonymous> (/Users/ibrahimkurhan/.config/yarn/global/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:481:28)
+    at IncomingMessage.emit (events.js:387:35)
+    at IncomingMessage.emit (domain.js:470:12)
+    at endReadableNT (internal/streams/readable.js:1317:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[error] 
+[error] Error: Failed to get Firebase project personal-website-a3fbd. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-04-18T17:42:53.492Z] ----------------------------------------------------------------------
+[debug] [2022-04-18T17:42:53.493Z] Command:       /Users/ibrahimkurhan/.nvm/versions/node/v14.17.1/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-04-18T17:42:53.494Z] CLI Version:   8.0.3
+[debug] [2022-04-18T17:42:53.494Z] Platform:      darwin
+[debug] [2022-04-18T17:42:53.494Z] Node Version:  v14.17.1
+[debug] [2022-04-18T17:42:53.494Z] Time:          Mon Apr 18 2022 18:42:53 GMT+0100 (British Summer Time)
+[debug] [2022-04-18T17:42:53.494Z] ----------------------------------------------------------------------
+[debug] [2022-04-18T17:42:53.495Z] 
+[debug] [2022-04-18T17:42:53.500Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-18T17:42:53.501Z] > authorizing via signed-in user
+[debug] [2022-04-18T17:42:53.501Z] [iam] checking project personal-website-a3fbd for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-04-18T17:42:53.503Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-04-18T17:42:53.503Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-18T17:42:53.701Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Mon, 18 Apr 2022 17:42:53 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T17:42:53.702Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/personal-website-a3fbd:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-18T17:42:54.677Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 18 Apr 2022 17:42:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=625","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T17:42:54.677Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2022-04-18T17:42:54.678Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-04-18T17:42:54.678Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-04-18T17:42:54.679Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-18T17:42:54.857Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 18 Apr 2022 17:42:54 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T17:42:54.858Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/personal-website-a3fbd  
+ 
+[debug] [2022-04-18T17:42:54.995Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 18 Apr 2022 17:42:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T17:42:54.996Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-04-18T17:42:54.996Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-04-18T17:42:55.140Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/Users/ibrahimkurhan/.config/yarn/global/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/Users/ibrahimkurhan/.config/yarn/global/node_modules/firebase-tools/lib/api.js:41:35)
+    at Request.self.callback (/Users/ibrahimkurhan/.config/yarn/global/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:375:28)
+    at Request.emit (domain.js:470:12)
+    at Request.<anonymous> (/Users/ibrahimkurhan/.config/yarn/global/node_modules/request/request.js:1154:10)
+    at Request.emit (events.js:375:28)
+    at Request.emit (domain.js:470:12)
+    at IncomingMessage.<anonymous> (/Users/ibrahimkurhan/.config/yarn/global/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:481:28)
+    at IncomingMessage.emit (events.js:387:35)
+    at IncomingMessage.emit (domain.js:470:12)
+    at endReadableNT (internal/streams/readable.js:1317:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[error] 
+[error] Error: Failed to get Firebase project personal-website-a3fbd. Please make sure the project exists and your account has permission to access it.

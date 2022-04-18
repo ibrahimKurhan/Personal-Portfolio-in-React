@@ -6,6 +6,7 @@ import Contact from "./Component/Home/Contact/Contact";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Skills from "./Component/Skills/Skills";
 import Projects from "./Component/Projects/Projects";
+import CookieBot from "./Component/Cookie-bot";
 
 export default class App extends Component {
   render() {
@@ -16,6 +17,7 @@ export default class App extends Component {
         <Contact />
         <Skills />
         <Projects />
+        <CookieBot />
       </div>
     );
   }
