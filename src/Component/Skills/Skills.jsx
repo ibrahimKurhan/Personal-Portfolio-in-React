@@ -15,27 +15,27 @@ export default class Skills extends Component {
     return (
       <>
         <a name="skills" />
-        <div className={styles.container} id={styles.skills}>
-          <div className={styles.main}>
-            <div className={styles.topped}>
-              <div className={styles.eachSkills}>Skills I have</div>
-              <div className={styles.hope}>
+        <div className={ styles.container } id={ styles.skills }>
+          <div className={ styles.main }>
+            <div className={ styles.topped }>
+              <div className={ styles.eachSkills }>Skills I have</div>
+              <div className={ styles.hope }>
                 <div>
                   <ul>
                     <li>
-                      <img src={js} />
+                      <img src={ js } alt="Javascript" />
                       Javascript
                     </li>
                     <li>
-                      <img src={react} />
+                      <img src={ react } alt="react" />
                       React.js
                     </li>
                     <li>
-                      <img src={jquery} />
+                      <img src={ jquery } alt="jquery" />
                       Jquery
                     </li>
                     <li>
-                      <img src={github} />
+                      <img src={ github } alt="github" />
                       Git/Github
                     </li>
                   </ul>
@@ -43,26 +43,26 @@ export default class Skills extends Component {
                 <div>
                   <ul>
                     <li>
-                      <img src={html} />
+                      <img src={ html } alt="html" />
                       HTML
                     </li>
                     <li>
-                      <img src={css} />
+                      <img src={ css } alt="css" />
                       CSS3
                     </li>
                     <li>
-                      <img src={sass} />
+                      <img src={ sass } alt="sass" />
                       SASS
                     </li>
                     <li>
-                      <img src={firebase} />
+                      <img src={ firebase } alt="firebase" />
                       Firebase
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className={styles.desiredSkills}>
+            <div className={ styles.desiredSkills }>
               <DesiredSkills />
             </div>
           </div>
